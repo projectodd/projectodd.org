@@ -1,0 +1,89 @@
+/* 960 Grid System ~ Text CSS.
+ * Learn more ~ http://960.gs/
+ * *
+ * Licensed under GPL and MIT. */
+
+@import "960/text";
+
+@include text;
+
+body {
+  font-family: 'Trebuchet MS',Verdana,sans-serif;
+}
+
+a {
+  color: #888;
+}
+
+a:hover {
+  color: #755;
+}
+
+h1 {
+  font-size: 240%;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 120%;
+  margin-bottom: .2ex;
+  color: #999999;
+}
+
+#overview {
+  font-size: 130%;
+}
+
+#team {
+  .member {
+    clear: both;
+    padding-bottom: 4em;
+    img {
+      border: 2px solid #444;
+      margin-right: 1em;
+      margin-bottom: 1em;
+      float: left;
+    }
+  }
+}
+
+#projects {
+  .project {
+    clear: both;
+    padding-bottom: 3em;
+    img {
+      width: 200px;
+    }
+    p {
+      margin-bottom: 1ex;
+    }
+  }
+}
+
+#team, #projects {
+  .links {
+    font-size: 90%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    a {
+      margin-right: .5ex;
+      margin-left: .5ex;
+      text-decoration: none;
+    }
+  }
+}
+
+#team .links {
+  clear: both;
+}
+
+#projects .links {
+  text-align: right;
+}
+
+
+#footer {
+  text-align: center;
+  font-size: 90%;
+  color: #666;
+}

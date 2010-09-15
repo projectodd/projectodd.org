@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+#overview_container
+  #overview
+    ProjectOdd started life in September 2008 as a cluster of research
+    projects by Bob McWhirter.  Since then, two main themes have emerged,
+    and the research projects have morphed into bonafide opensource
+    projects, staffed by Red Hat with a fantastic team.
+
+#team
+  %h1 Team
+  - for key in [ :bob, :mgoldmann, :jc3, :bbrowning, :tcrawley, :lanceball ] do
+    - member = site.team[key]
+    .member
+      %h2 
+        = member.name
+      %img.headshot{:src=>"/images/#{key}.png"}
+      .description
+        = member.content
+      .links
+        - if member.jbossorg_username
+          %a{:href=>"http://community.jboss.org/people/#{member.jbossorg_username}"}
+            JBoss.org Profile
+        - if member.blog_url
+          %a{:href=>member.blog_url}
+            Blog
+        - if member.github_username
+          %a{:href=>"http://github.com/#{member.github_username}"}
+            GitHub Profile
+        - if member.twitter_username
+          %a{:href=>"http://twitter.com/#{member.twitter_username}"}
+            Twitter Timeline
+
+#projects
+  %h1 Projects
+  - for key in [ :boxgrinder, :steamcannon, :torquebox ] do
+    - project = site.projects[key]
+    .project
+      - if ( project.logo_url )
+        %a{:href=>project.url}
+          %img{:src=>project.logo_url}
+      - else
+        %h2
+          %a{:href=>project.url}
+            = project.name
+      .description
+        = project.content
+      .links
+        %a{:href=>project.url}
+          Project Site
