@@ -8,30 +8,37 @@
 @include text;
 
 body {
-  font-family: 'Trebuchet MS',Verdana,sans-serif;
+  //font-family: 'Trebuchet MS',Verdana,sans-serif;
 }
 
 a {
-  color: #888;
+  color: #777;
 }
 
 a:hover {
-  color: #755;
+  color: #955;
 }
 
 h1 {
   font-size: 240%;
   font-weight: bold;
+  color: #911F1F;
+  margin-bottom: 1em;
+  font-family: courier, monospace;
 }
 
 h2 {
-  font-size: 120%;
+  font-family: courier, monospace;
+  font-size: 140%;
+  font-weight: bold;
   margin-bottom: .2ex;
-  color: #999999;
+  color: #444;
 }
 
 #overview {
-  font-size: 130%;
+  color: #777;
+  font-style: italic;
+  text-align: justify;
 }
 
 #team {

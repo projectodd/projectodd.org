@@ -36,6 +36,11 @@ body.ninesixty #container {
   #header_container {
     @include grid(24);
     text-align: center;
+    img.logo {
+      width: 400px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
   }
   #content_container {
     #team {
@@ -59,11 +64,12 @@ body.ninesixty #container {
   @include grid(12);
   @include alpha;
   @include omega;
-  margin-bottom: 2em;
   margin-top: 2em;
+  margin-bottom: 4em;
 }
 
 #overview {
-  border: 2px solid #ccc;
+  border-top: 2px solid #777;
+  border-bottom: 2px solid #777;
   padding: 1em;
 }
