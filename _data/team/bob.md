@@ -6,5 +6,4 @@ github_username: bobmcwhirter
 blog_url: http://bob.mcwhirter.org/
 ---
 
-Bob started Project:odd (as [Odd Thesis](http://oddthesis.org/))in September 2008. He currently contributes to 
-[Deltacloud.org](http://deltacloud.org).  He's also the lead on [TorqueBox](http://torquebox.org/).
+Bob started Project:odd (as [Odd Thesis](http://oddthesis.org/))in September 2008. He currently herds the [TorqueBox](http://torquebox.org/) project.
