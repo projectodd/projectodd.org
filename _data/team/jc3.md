@@ -7,5 +7,4 @@ blog_url: http://jim.crossleys.org/
 ---
 
 Jim joined the Project:odd team in May of 2010.  
-When he's not otherwise using his powers for "general human suffering reduction", 
-he lets his Ruby and Java skills battle it out on [TorqueBox](http://torquebox.org).
+When he's not blathering on about his prostate or his "sensitive skin", he works on [Immutant](http://immutant.org) and [TorqueBox](http://torquebox.org).
