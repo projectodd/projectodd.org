@@ -35,7 +35,7 @@ layout: default
 
 #projects
   %h1 Projects
-  - for key in [ :boxgrinder, :torquebox ] do
+  - for key in [ :boxgrinder, :immutant, :torquebox ] do
     - project = site.projects[key]
     .project
       - if ( project.logo_url )
