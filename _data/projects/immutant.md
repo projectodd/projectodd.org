@@ -1,7 +1,7 @@
 ---
 name: Immutant
 url: http://immutant.org/
-logo_url: http://immutant.org/images/logos/immutant_text-red.png
+logo_url: /images/immutant.png
 ---
 
 [Immutant](#{page.url}) is an application server for Clojure 
