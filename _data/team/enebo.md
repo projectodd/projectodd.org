@@ -2,7 +2,7 @@
 name: Tom Enebo
 #jbossorg_username: enebo
 twitter_username: tom_enebo
-github_username: jcrossley
+github_username: enebo
 blog_url: http://blog.enebo.com/
 ---
 
