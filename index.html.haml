@@ -11,10 +11,10 @@ layout: default
 
 #team
   %h1 Odd Fellows
-  - for key in [ :bob, :mgoldmann, :jc3, :bbrowning, :tcrawley, :lanceball, :msavy ] do
+  - for key in [ :bob, :mgoldmann, :jc3, :bbrowning, :tcrawley, :lanceball, :msavy, :enebo ] do
     - member = site.team[key]
     .member
-      %h2 
+      %h2
         = member.name
       %img.headshot{:src=>"/images/#{key}.png"}
       .description

@@ -1,4 +1,5 @@
 ---
+anoter_name: Foo
 name: Bob McWhirter
 jbossorg_username: bob.mcwhirter
 twitter_username: bobmcwhirter
