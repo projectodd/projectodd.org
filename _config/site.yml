@@ -1,7 +1,12 @@
 profiles:
   development:
+  staging:
+    base_url: http://staging.projectodd.org/
+    deploy:
+      host: projectodd.org
+      path: /var/www/domains/projectodd.org/staging/htdocs/ 
   production:
     base_url: http://projectodd.org/
     deploy:
       host: projectodd.org
-      path: /var/www/domains/projectodd.org/www/htdocs
+      path: /var/www/domains/projectodd.org/www/htdocs/ 
