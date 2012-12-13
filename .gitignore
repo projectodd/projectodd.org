@@ -1,3 +1,5 @@
 .sass-cache/
 *.swp
 _site
+.awestruct
+.rvmrc
