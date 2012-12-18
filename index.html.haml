@@ -11,7 +11,7 @@ layout: default
 
 #team
   %h1 Odd Fellows
-  - for key in [ :bob, :mgoldmann, :jc3, :bbrowning, :tcrawley, :lanceball, :msavy, :enebo ] do
+  - for key in [ :bob, :mgoldmann, :jc3, :bbrowning, :tcrawley, :lanceball, :msavy, :enebo, :headius ] do
     - member = site.team[key]
     .member
       %h2
@@ -35,7 +35,7 @@ layout: default
 
 #projects
   %h1 Projects
-  - for key in [ :boxgrinder, :dynjs, :immutant, :torquebox ] do
+  - for key in [ :boxgrinder, :dynjs, :jruby, :immutant, :torquebox ] do
     - project = site.projects[key]
     .project
       - if ( project.logo_url )
