@@ -1,4 +1,5 @@
 source :rubygems
 
-gem 'awestruct', '0.4.2.x5'
-gem 'therubyracer'
+gem 'awestruct', '0.4.7'
+gem 'therubyracer', '0.10.1'
+gem 'rb-fsevent', '~> 0.9.1'
