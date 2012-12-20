@@ -1,7 +1,110 @@
 ---
 title: Upcoming Conferences
 layout: base
+confs: 
+  - name: CodeMash
+    where: Sandusky, OH
+    when: Jan 8-11, 2013
+    url: http://codemash.org/
+    audience: General dev
+    cfp: N/A
+    who: Charlie
+    status: Invited, accepted (2 JVM talks); hotel covered
+
+  - name: FOSDEM
+    where: Brussels, Belgium
+    when: Feb 2-3, 2013
+    regional: N
+    url: http://www.fosdem.org
+    audience: OSS
+    who: Charlie
+    status: Submitted, likely to be accepted
+
+  - name: Jfokus
+    where: Stockholm, Sweden
+    when: Feb 4-6, 2013
+    regional: Y
+    url: http://www.jfokus.se/
+    audience: Java
+    cfp: Completed in Sept 2012
+    who: Charlie
+    status: Invited, accepted
+
+  - name: RubyConf Australia
+    where: Melbourne, Australia
+    when: Feb 20-22, 2013
+    regional: Y
+    url: http://rubyconf.org.au
+    audience: Ruby
+    cfp: N/A
+    who: Charlie
+    status: Submitted, accepted; travel assistance avail.
+
+  - name: DevNexus
+    where: Atlanta, GA
+    when: February 18 - 19
+    regional: Y
+    url: http://devnexus.com/
+    audience: Java    
+    cfp: Open until 12/31
+
+  - name: Clojure/West
+    where: Portland, OR
+    when: March 18 - 20
+    regional: N
+    url: http://clojurewest.org/
+    audience: Clojure    
+    sponsor: Y
+    cfp: Open until 1/4
+    who: Toby
+    status: submitted
+
+  - name: RailsConf
+    where: Portland, OR
+    when: April 29 - May 2
+    regional: N
+    url: http://railsconf.com/
+    audience: Ruby    
+    sponsor: Y
+    status:
+
+  - name: JRubyConf
+    regional: N
+    url: http://jrubyconf.com/
+    audience: Ruby    
+    sponsor: Y
+
+  - name: JUDCon Boston
+    where: Boston, MA
+    when: June ?
+    regional: N
+    url: http://www.oscon.com/
+    audience: Mixed
+    cfp: Open until 2/4
+
+  - name: Ruby Hoedown
+    where: Nashville, TN
+    regional: Y
+    url: http://rubyhoedown.com
+    audience: Ruby    
+
+  - name: Barcelona RubyConf (BaRuCo)
+    where: Barcelona, Spain
+    when: Sept 14-15, 2013
+    regional: Y
+    url: http://www.baruco.org/
+    audience: Ruby
+    cfp: N/A
+    who: Charlie
+    status: Invited, accepted; travel + hotel covered
+
+  - name: strange loop
+    where: St. Louis, MO
+    when: Sep 18 - Sep 20
+    url: http://thestrangeloop.com/
+    cfp: April
 ---
+
 %style{:type => "text/css"}
   :sass 
     table
@@ -16,6 +119,8 @@ layout: base
     strong
       font-weight: bold
       
+- def or_q(v); v || "?"; end
+    
 %table
   %tr
     %th Name
@@ -28,268 +133,21 @@ layout: base
     %th Call For Papers
     %th Who Wants to Submit?
     %th Status
-
-  %tr
-    %td CodeMash
-    %td Sandusky, OH
-    %td Jan 8-11, 2013
-    %td ?
-    %td 
-      %a{:href=>"http://codemash.org/"} http://codemash.org
-    %td General dev
-    %td ?
-    %td N/A
-    %td Charlie
-    %td Invited, accepted (2 JVM talks); hotel covered
-
-  %tr
-    %td FOSDEM
-    %td Brussels, Belgium
-    %td Feb 2-3, 2013
-    %td N
-    %td 
-      %a{:href=>"http://www.fosdem.org/"} http://www.fosdem.org
-    %td OSS
-    %td ?
-    %td ?
-    %td Charlie
-    %td Submitted, liktely to be accepted
-
-  %tr
-    %td Jfokus
-    %td Stockholm, Sweden
-    %td Feb 4-6, 2013
-    %td Y
-    %td 
-      %a{:href=>"http://www.jfokus.se/"} http://www.jfokus.se/
-    %td Java
-    %td ?
-    %td Completed in Sept 2012
-    %td Charlie
-    %td Invited, accepted
-
-  %tr
-    %td RubyConf Australia
-    %td Melbourne, Australia
-    %td Feb 20-22, 2013
-    %td Y
-    %td 
-      %a{:href=>"http://rubyconf.org.au/"} http://rubyconf.org.au
-    %td Ruby
-    %td ?
-    %td N/A
-    %td Charlie
-    %td Submitted, accepted; travel assistance avail.
-
-  %tr
-    %td DevNexus
-    %td Atlanta, GA
-    %td February 18 - 19
-    %td Y
-    %td
-      %a{:href=>"http://devnexus.com/"} http://devnexus.com/
-    %td Java    
-    %td
-    %td 
-      %strong Open until 12/31
-    %td 
-    %td 
-  %tr
-    %td Clojure/West
-    %td Portland, OR
-    %td March 18 - 20
-    %td N
-    %td
-      %a{:href=>"http://clojurewest.org/"} http://clojurewest.org/
-    %td Clojure    
-    %td Y
-    %td Open until 1/4
-    %td Toby
-    %td working on it!
-
-  %tr
-    %td RailsConf
-    %td Portland, OR
-    %td April 29 - May 2
-    %td N
-    %td
-      %a{:href=>"http://railsconf.com/"} http://railsconf.com/
-    %td Ruby    
-    %td Y
-    %td ?
-    %td ?
-    %td
-  %tr
-    %td JRubyConf
-    %td ?
-    %td ?
-    %td N
-    %td
-      %a{:href=>"http://jrubyconf.com/"} http://jrubyconf.com/
-    %td Ruby    
-    %td Y
-    %td ?
-    %td ?
-    %td
-  %tr
-    %td JUDCon Boston
-    %td Boston, MA
-    %td June ?
-    %td N
-    %td
-      ?
-    %td Java
-    %td    
-    %td ?
-    %td ?
-    %td
-  %tr
-    %td Summit
-    %td Boston, MA
-    %td June 10 - 14
-    %td N
-    %td
-      ?
-    %td Java
-    %td
-    %td ?
-    %td 
-    %td 
-  %tr
-    %td OSCon
-    %td Portland, OR
-    %td July 22 - 26
-    %td N
-    %td
-      %a{:href=>"http://www.oscon.com/"} http://www.oscon.com/
-    %td Mixed
-    %td ?
-    %td Open until 2/4
-    %td 
-    %td 
-  %tr
-    %td Ruby Hoedown
-    %td Nashville, TN
-    %td ?
-    %td Y
-    %td
-      %a{:href=>"http://rubyhoedown.com"} http://rubyhoedown.com
-    %td Ruby    
-    %td ?
-    %td ?
-    %td 
-    %td
-  %tr
-    %td Barcelona RubyConf (BaRuCo)
-    %td Barcelona, Spain
-    %td Sept 14-15, 2013
-    %td Y
-    %td 
-      %a{:href=>"http://www.baruco.org/"} http://www.baruco.org/
-    %td Ruby
-    %td ?
-    %td N/A
-    %td Charlie
-    %td Invited, accepted; travel + hotel covered
-    
-  /
+  
+  - page.confs.each do |conf|
     %tr
-    %td RubyNation
-    %td DC
-    %td March 23-24
-    %td Y
-    %td
-      %a{:href=>"http://www.rubynation.org/"} http://www.rubynation.org/ 
-    %td 
-      Closes Feb 1 
-      %a{:href=>"https://rubynation2012.busyconf.com/proposals/new"} https://rubynation2012.busyconf.com/proposals/new
-    %td ?
-    %td We've been invited
-  /
-    %tr
-    %td MagicRuby
-    %td Orlando, FL?
-    %td April 5 - 6 (possibly moving to June)
-    %td Y?
-    %td
-      %a{:href=>"http://magic-ruby.com/"} http://magic-ruby.com/ 
-      (not updated for 2012)
-    %td ?
-    %td ?
-    %td
-  /
-    %tr
-    %td Cascadia Ruby Conf
-    %td Seattle, WA
-    %td July 29 - July 30
-    %td Y
-    %td
-      %a{:href=>"http://cascadiarubyconf.com/"} http://cascadiarubyconf.com/
-    %td Closed May 15th
-    %td Bob || Toby
-    %td Rejected
-  /
-    %tr
-    %td Rocky Mountain Ruby
-    %td Boulder, CO
-    %td Aug 31 - Sep 2
-    %td Y
-    %td
-      %a{:href=>"http://rockymtnruby.com/"} http://rockymtnruby.com/
-    %td Open until June 30th
-    %td 
-    %td 
-  /
-    %tr
-    %td GoGaRuCo
-    %td San Francisco, CA
-    %td Sep 16 - Sep 17
-    %td Y
-    %td
-      %a{:href=>"http://gogaruco.com/"} http://gogaruco.com/
-    %td Open until June 25th
-    %td 
-    %td 
-  /  
-    %tr
-    %td WindyCityRails
-    %td Chicago, IL
-    %td Sep 17
-    %td Y
-    %td
-      %a{:href=>"http://windycityrails.org/"} http://windycityrails.org/
-    %td Closed July 1st
-    %td Toby
-    %td Submitted
-  /
-    %tr
-    %td strange loop
-    %td St. Louis, MO
-    %td Sep 18 - Sep 20
-    %td 
-    %td
-      %a{:href=>"http://thestrangeloop.com/"} http://thestrangeloop.com/
-    %td Closed June 10
-    %td Toby
-    %td Rejected
-  /
-    %tr
-    %td RubyConf
-    %td New Orleans, LA
-    %td Sep 29 - Oct 1
-    %td 
-    %td
-      %a{:href=>"http://rubyconf.org/"} http://rubyconf.org/
-    %td Closed June 15
-    %td Toby
-    %td Rejected
-  /
-    %tr
-    %td JavaOne
-    %td San Francisco, CA
-    %td Oct 2 - Oct 6
-    %td
-    %td
-      %a{:href=>"http://www.oracle.com/javaone/index.html"} http://www.oracle.com/javaone/index.html
-    %td Closed May 23 11:59pm PDT
-    %td
+      %td= conf.name
+      %td= or_q(conf.where)
+      %td= or_q(conf.when)
+      %td= or_q(conf.regional)
+      %td
+        - if conf.url
+          %a{:href=>conf.url}=conf.url
+        - else
+          ?
+      %td= or_q(conf.audience)
+      %td= or_q(conf.sponsor)
+      %td= or_q(conf.cfp)
+      %td= or_q(conf.who)
+      %td= conf.status
+      
