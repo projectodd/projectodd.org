@@ -1,6 +1,5 @@
 ---
 name: Lance Ball
-jbossorg_username: lanceball
 github_username: lance
 twitter_username: lanceball
 blog_url: http://blog.lanceball.com/
