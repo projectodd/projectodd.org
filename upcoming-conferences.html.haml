@@ -59,6 +59,7 @@ confs:
     audience: Ruby
     cfp: closes January 19
     status: Not submitted
+    cost: $600 air, $1100 hotel, $100 food
 
   - name: RailsConf
     where: Portland, OR
@@ -135,6 +136,7 @@ confs:
     %th Call For Papers
     %th Who Wants to Submit?
     %th Status
+    %th Estimated Cost
   
   - page.confs.each do |conf|
     %tr
@@ -152,4 +154,5 @@ confs:
       %td= or_q(conf.cfp)
       %td= or_q(conf.who)
       %td= conf.status
+      %td= conf.cost
       
