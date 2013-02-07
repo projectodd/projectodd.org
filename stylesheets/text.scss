@@ -88,6 +88,18 @@ h2 {
   text-align: right;
 }
 
+#conferences {
+  td.status {
+    width: 150px;
+  }
+  td.cost {
+    width: 120px;
+  }
+  td.rejected {
+    background: url('/images/rejected-stamp.png') no-repeat center;
+  }
+}
+
 
 #footer {
   text-align: center;

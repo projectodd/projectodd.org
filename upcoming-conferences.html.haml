@@ -50,7 +50,7 @@ confs:
     regional: Y
     url: http://www.devoxx.com/display/UK13/Home
     audience: Java/JVM
-    sponsor: ?
+    sponsor:
     cfp: Closed
     who: Charlie
     status: Invited, accepted tentatively
@@ -62,7 +62,7 @@ confs:
     regional: Y
     url: http://www.devoxx.com/display/FR13/Accueil
     audience: Java/JVM
-    sponsor: ?
+    sponsor:
     cfp: Closed
     who: Charlie
     status: Invited, accepted tentatively
@@ -75,7 +75,7 @@ confs:
     url: http://mtnwestrubyconf.org/
     audience: Ruby
     cfp: closed January 19
-    status: Submitted
+    status: REJECTED
     who: Lance
     cost: $600 air, $1100 hotel, $100 food
 
@@ -85,7 +85,7 @@ confs:
     regional: Y?
     url: http://www.oracle.com/javaone/ru-en/index.html
     audience: Java/JVM
-    sponsor: ?
+    sponsor:
     cfp: Closed
     who: Charlie
     status: Invited, informed them I would like to pending approval
@@ -115,8 +115,8 @@ confs:
     regional: Y
     url: http://www.rubyconfindia.org
     audience: Ruby
-    sponsor: ?
-    cfp: ?
+    sponsor:
+    cfp:
     who: Charlie
     status: Invited last year and at RubyConf; would like to go
     cost: air is $2000 as of Jan 31, $1200 hotel (might be covered), minimal food
@@ -162,6 +162,12 @@ confs:
     when: Sep 18 - Sep 20
     url: http://thestrangeloop.com/
     cfp: April
+
+  - name: Rocky Mountain Ruby
+    where: Boulder, CO
+    when: Sep 25 - Sep 27
+    url: http://rockymtnruby.com/
+    audience: Ruby
 ---
 
 %style{:type => "text/css"}
@@ -180,7 +186,7 @@ confs:
       
 - def or_q(v); v || "?"; end
     
-%table
+%table#conferences
   %tr
     %th Name
     %th Location
@@ -209,6 +215,6 @@ confs:
       %td= or_q(conf.sponsor)
       %td= or_q(conf.cfp)
       %td= or_q(conf.who)
-      %td= conf.status
-      %td= conf.cost
+      %td{:class=>(conf.status ? conf.status.split(/ /).first.downcase : "") + " status"}= conf.status
+      %td.cost= conf.cost
       
