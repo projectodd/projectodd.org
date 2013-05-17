@@ -1,7 +1,7 @@
 ---
-name: Norman Mauer
-twitter_username: normanmauer
-github_username: normanmauer
+name: Norman Maurer
+twitter_username: normanmaurer
+github_username: normanmaurer
 ---
 
 Norman joined Project:odd in early 2013. He is a core contributor to
