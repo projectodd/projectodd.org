@@ -7,5 +7,5 @@ blog_url: http://blog.qmx.me/
 ---
 
 Nobody knows exactly when QMX officially joined Project:odd. He's the
-founder of the dyn.js project and a core contributor to JRuby. He also
+founder of the dynjs project and a core contributor to JRuby. He also
 likes beer.
