@@ -4,10 +4,11 @@ layout: default
 
 #overview_container
   #overview
-    Project:odd started life in September 2008 as a cluster of research
-    projects by Bob McWhirter.  Since then, two main themes have emerged,
-    and the research projects have morphed into bonafide opensource
-    projects, staffed by Red Hat with a fantastic team.
+
+    Project:odd started life in September 2008 as a cluster of
+    research projects by Bob McWhirter. Since then, those research
+    projects have evolved into bonafide opensource projects, staffed
+    by Red Hat with a fantastic team.
 
 #team
   %h1 Odd Fellows
@@ -35,7 +36,7 @@ layout: default
 
 #projects
   %h1 Projects
-  - for key in [ :boxgrinder, :dynjs, :jruby, :immutant, :torquebox ] do
+  - for key in [ :boxgrinder, :dynjs, :jruby, :immutant, :torquebox, :vertx ] do
     - project = site.projects[key]
     .project
       - if ( project.logo_url )
