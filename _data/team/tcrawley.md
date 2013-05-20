@@ -1,6 +1,5 @@
 ---
 name: Toby Crawley
-jbossorg_username: tcrawley
 github_username: tobias
 twitter_username: tcrawley
 ---
