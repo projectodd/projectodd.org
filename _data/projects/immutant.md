@@ -4,6 +4,5 @@ url: http://immutant.org/
 logo_url: /images/immutant.png
 ---
 
-[Immutant](#{page.url}) is an application server for Clojure 
-built upon the [JBoss AS](http://jboss.org/jbossas) project.
-
+[Immutant](#{page.url}) is a suite of Clojure libraries that integrate
+with [WildFly](http://wildfly.org/).
